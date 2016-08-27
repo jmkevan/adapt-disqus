@@ -10,6 +10,31 @@
       "enum": ["full-width", "half-width", "both"],
       "default": "both",
       "editorOnly": true
+    },
+    "_disqusSettings" : {
+      "type":"object",
+      "required": true,
+      "title" : "Disqus Properties",
+      "properties" : {
+        "canonicalAddress" : {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Enter canonical address",
+          "translatable":true
+        },
+        "disqusID" : {
+          "type":"string",
+          "required":false,
+          "default":"",
+          "inputType":"Text",
+          "validators": [],
+          "help": "Enter unique identifier to differentiate threads",
+          "translatable":true
+        }
+      }
     }
   }
 }
